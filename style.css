@@ -8,13 +8,16 @@ body {
     display: flex;
     flex: 1;
     flex-direction: column;
-    justify-content: space-around;
     background-color: #1f2937;
-    padding: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 50px;
 }
 
 .header-image {
     height: 300px;
+    margin-left: 50px;
+    flex-shrink: 1;
 }
 
 .sign-up {
@@ -40,7 +43,7 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin: 0px;
 }
@@ -50,6 +53,8 @@ body {
     flex-direction: column;
     align-items: center;
     color: #1f2937;
+    padding-left: 115px;
+    padding-right: 115px;
 }
 
 h2 {
@@ -64,26 +69,37 @@ h2 {
 
 .info-image {
     display: flex;
-    border: 1px;
+    border: 2px;
     border-style: solid;
     border-color: purple;
-    align-self: center;
-    width: 150px;
+    max-width: 250px;
+    border-radius: 8px;
+}
+
+.info-div p{
+    max-width: 250px;
+    text-align: center;
+}
+
+.header-logo {
+    width: 100px;
 }
 
 .quote {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     margin-top: 15px;
     background-color: #E5E7EB;
+    padding: 100px 150px;
+    flex-wrap: wrap;
 }
 
 .quote-h {
     font-size: 15px;
     padding: 0px;
     margin: 0px;
+    align-self: flex-end;
 }
 
 .quote-p {
@@ -93,15 +109,29 @@ h2 {
     font-size: 36px;
     color: #1f2937;
     font-style: italic;
+    align-self: center;
 }
 
 .contact {
     display: flex;
-    gap: 10px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     background-color: #3882f6;
+    margin: 100px 100px;
+    border-radius: 8px;
+    padding: 15px 0px;
+}
+
+.contact, .footer {
     color: white;
+}
+
+h3 {
+    margin-bottom: 0px;
+}
+
+.contact-div p {
+    margin-top: 0px;
 }
 
 .footer {
@@ -113,8 +143,9 @@ h2 {
 
 ul {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     list-style-type: none;
+    padding: 0px;
 }
 
 a{
@@ -126,7 +157,13 @@ a, .head-cont p {
     color: #E5E7EB;
 }
 
+.head-cont p{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
 h1 {
     color: #f9faf8;
     font-size: 48px;
+    margin-bottom: 0px;
 }
